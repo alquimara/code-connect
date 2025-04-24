@@ -111,14 +111,22 @@ async function main() {
             "authorId": ana.id
         }
     ];
-posts.forEach(async (post) => {
-    await prisma.post.upsert({
-        where:{
-            slug: post.slug},
-            update:{},
-            create:post
+// posts.forEach(async (post) => {
+//     await prisma.post.upsert({
+//         where:{
+//             slug: post.slug},
+//             update:{},
+//             create:post
+//     })
+// })
+await Promise.all(posts.map(post => 
+    prisma.post.upsert({
+      where: { slug: post.slug },
+      update: {},
+      create: post
     })
-})
+  ));
+  console.log('Seed ok')
 console.log('seed ok')
 
 }

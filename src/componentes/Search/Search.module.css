@@ -1,0 +1,37 @@
+.search{
+    display: flex;
+    width: 996px;
+    padding-bottom: 16px;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+.input{
+    background-color: #171D1F;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    color:#BCBCBC;
+    border: none;
+  
+}
+
+.button{
+    background-color: #81FE88;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+   color:#132E35;
+   border: none;
+   cursor: pointer;
+ 
+
+}
+.button:hover{
+    opacity: 0.6;
+}

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",                 // <== ESSENCIAL!
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

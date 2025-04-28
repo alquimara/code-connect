@@ -3,7 +3,7 @@
 'use client' // Error boundaries must be Client Components
 
 import { useEffect } from 'react'
-import { Erro } from '@/componentes/error'
+import { Erro } from '@/componentes/Erro'
 
 
 export default function Error({ error, reset }) {

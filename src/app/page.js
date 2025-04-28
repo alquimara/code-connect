@@ -7,7 +7,7 @@ import Link from "next/link";
 import db from '../../prisma/db'
 import { Search } from "@/componentes/Search";
 
-// backend comando para rodar:json-server post.json -p 3042
+
 
 
 const getAllPosts = async (page, searchTerm) => {
@@ -37,7 +37,7 @@ const getAllPosts = async (page, searchTerm) => {
       },
       skip
     })
-    console.log(posts)
+   
     return{data:posts, prev, next}
     
   } catch (error) {
